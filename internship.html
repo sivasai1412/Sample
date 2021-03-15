@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS-->
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+
+    <title>RYD Intenship Exam</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+                
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><img src="ryd.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Syllabus</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                 </ul>
+                 <span class="navbar-text">
+                     <a id="loginButton">
+                         <span class="fa fa-sign-in"></span> Login
+                     </a>
+                 </span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" id="close">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInput">
+                                    Email ID
+                                </label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail" placeholder="Enter your Email Id"> 
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="examplePassword">Password</label>
+                                <input type="password" class="for-control form-control-sm mr-1" id="exampleInputPassword" placeholder="Enter your Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" id="cancelButton">Cancel</button>
+                            <button type="button" class="bt btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>RYD Intenship Exam</h1>
+                    <p>Success is never final. Failure is never fatal. Its courage that counts.</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-3 align-self-center">
+                            <img src="ryd.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="col-12">
+            <h3>General Studies</h3>
+            <hr>
+        </div>
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Polity</h5>
+                                      <p class="card-text">The Exam is based on the Indian Politics so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Economics</h5>
+                                      <p class="card-text">The Exam is based on the Indian Economy so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">History</h5>
+                                        <p class="card-text">The Exam is based on the Indian History so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Geography</h5>
+                                      <p class="card-text">The Exam is based on the Geographical locations so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Current Affairs</h5>
+                                        <p class="card-text">The Exam is based on the Current Affairs(present situation) so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">General Science</h5>
+                                        <p class="card-text">The Exam is based on the Basic knowledge of Science so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Civics</h5>
+                                            <p class="card-text">The Exam is based on the Civics of 9th class Social studies so be prepared and attempt the exam.</p>
+                                            <a href="#" class="btn btn-primary">Start Exam</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                        <button type="button" class="btn btn-danger btn-sm" id="carouselButton">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <h3>English</h3>
+            <hr>
+        </div>
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel1" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Reading Comprehension</h5>
+                                      <p class="card-text">The Exam is based on the Passages so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Voices</h5>
+                                      <p class="card-text">The Exam is based on the Active and Passive voice so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Synonyms</h5>
+                                        <p class="card-text">The Exam is based on the meanings of the word given so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Antonyms</h5>
+                                      <p class="card-text">The Exam is based on the Opposites of word so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Error Checking</h5>
+                                        <p class="card-text">The Exam is based on the Errors in the given sentence so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Essay writing</h5>
+                                        <p class="card-text">The Exam is based on the Essay writing so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Letter writing</h5>
+                                            <p class="card-text">The Exam is based on the writing letter (Formal/ Informal) so be prepared and attempt the exam.</p>
+                                            <a href="#" class="btn btn-primary">Start Exam</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel1" data-slide-to="1"></li>
+                        <li data-target="#mycarousel1" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                        <button type="button" class="btn btn-danger btn-sm" id="carouselButton">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <h3>Logical reasoning</h3>
+            <hr>
+        </div>
+
+
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Alphanumeric Series</h5>
+                                      <p class="card-text">The Exam is based on the Alphanumeric Series so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Reasoning Analogies</h5>
+                                      <p class="card-text">The Exam is based on the Reasoning Analogies so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Blood Relations</h5>
+                                        <p class="card-text">The Exam is based on the Blood Relations so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                  <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Coding - Decoding</h5>
+                                      <p class="card-text">The Exam is based on the coding and decoding of words so be prepared and attempt the exam.</p>
+                                      <a href="#" class="btn btn-primary">Start Exam</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Puzzles</h5>
+                                        <p class="card-text">The Exam is based on the Puzzles so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Data sufficiency</h5>
+                                        <p class="card-text">The Exam is based on the Data sufficiency so be prepared and attempt the exam.</p>
+                                        <a href="#" class="btn btn-primary">Start Exam</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Syllogism</h5>
+                                            <p class="card-text">The Exam is based on the Syllogism so be prepared and attempt the exam.</p>
+                                            <a href="#" class="btn btn-primary">Start Exam</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel2" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel2" data-slide-to="1"></li>
+                        <li data-target="#mycarousel2" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                        <button type="button" class="btn btn-danger btn-sm" id="carouselButton">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              Near MetroStation<br>
+		              Yellareddyguda, Ameerpet<br>
+		              Hyderabad<br>
+		              <i class="fa fa-phone fa-lg"></i>: +91- 8464079764<br>
+		              <i class="fa fa-fax fa-lg"></i>: +91- 8464079764<br>
+		              <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:abc@exam.net">abc@exam.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>RYD Intenship Exam</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+<!-- jQuery first, then popper.js, then Bootstrap JS. -->
+<!-- build:js js/main.js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>
